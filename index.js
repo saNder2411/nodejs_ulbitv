@@ -1,1 +1,1 @@
-
+require('./lessons/path')
