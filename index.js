@@ -1,1 +1,1 @@
-require('./lessons/events')
+require('./lessons/stream')
