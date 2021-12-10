@@ -1,1 +1,1 @@
-require('./lessons/cluster')
+require('./lessons/events')
