@@ -1,1 +1,6 @@
-module.exports = { Router: require('./Router'), App: require('./App'), parseJson: require('./parseJson') }
+module.exports = {
+  Router: require('./Router'),
+  App: require('./App'),
+  parseJson: require('./parseJson'),
+  parseURL: require('./parseURL'),
+}
