@@ -5,13 +5,26 @@ const PORT = process.env.PORT ?? 5000
 
 const emitter = new EventEmitter()
 
+// endpoints = {
+//   '/users': {
+//     'GET': handler1,
+//     'POST': handler2,
+//     'DELETE': handler3,
+//   },
+//   '/posts': {
+//     'GET': handler,
+//     'POST': handler2,
+//     'DELETE': handler3,
+//   }
+// }
+
 class Router {
   constructor() {
     this.endpoints = {
       'default-path': {
-        GET: () => {},
-        POST: () => {},
-        DELETE: () => {},
+        GET: (_req, _res) => {},
+        POST: (_req, _res) => {},
+        DELETE: (_req, _res) => {},
       },
     }
   }
@@ -53,12 +66,12 @@ class Router {
 const router = new Router()
 
 router.get('/users', (req, res) => {
-  res.writeHead(200, { 'Content-type': 'text/html character=utf-8' })
+  res.writeHead(200, { 'Content-type': 'text/html; character=utf-8' })
   res.end('YOU SEND REQUEST TO USERS')
 })
 
 router.get('/posts', (req, res) => {
-  res.writeHead(200, { 'Content-type': 'text/html character=utf-8' })
+  res.writeHead(200, { 'Content-type': 'text/html; character=utf-8' })
   res.end('YOU SEND REQUEST TO POSTS')
 })
 

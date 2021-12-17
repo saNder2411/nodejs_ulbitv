@@ -1,14 +1,16 @@
 const mongoose = require('mongoose')
-const { App, parseJson, parseURL } = require('./framework')
+const { App, parseJson, parseURL, parseBody } = require('./framework')
 const router = require('./src/user_router')
 
 const PORT = process.env.PORT ?? 5000
 
 const app = new App()
 
-app.use(parseJson)
+app.use(parseBody)
 
 app.use(parseURL(`http://localhost:${PORT}`))
+
+app.use(parseJson)
 
 app.addRouter(router)
 

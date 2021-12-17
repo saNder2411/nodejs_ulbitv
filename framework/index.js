@@ -3,4 +3,5 @@ module.exports = {
   App: require('./App'),
   parseJson: require('./parseJson'),
   parseURL: require('./parseURL'),
+  parseBody: require('./parseBody'),
 }

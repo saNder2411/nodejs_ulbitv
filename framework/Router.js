@@ -1,3 +1,17 @@
+
+// endpoints = {
+//   '/users': {
+//     'GET': handler1,
+//     'POST': handler2,
+//     'DELETE': handler3,
+//   },
+//   '/posts': {
+//     'GET': handler,
+//     'POST': handler2,
+//     'DELETE': handler3,
+//   }
+// }
+
 module.exports = class Router {
   constructor() {
     this.endpoints = {
